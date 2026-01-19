@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awards — Isabelle Seepersaud</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/template.css">
+    <style>
+        :root{--accent:#2d3748;--muted:#718096;--light:#ffffff}
+        body{font-family:'Inter','Segoe UI',sans-serif;margin:0;background:#ffffff;color:#2d3748;line-height:1.6}
+        header{background:#ffffff;border-bottom:2px solid #e2e8f0;position:sticky;top:0;z-index:100;box-shadow:0 2px 4px rgba(45,55,72,0.05)}
+        nav{max-width:900px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+        nav ul{list-style:none;display:flex;gap:32px;margin:0;padding:0}
+        nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:0.95rem;transition:all 0.3s;position:relative}
+        nav a:hover{color:var(--accent);transform:translateY(-2px)}
+        nav a::after{content:'';position:absolute;bottom:-8px;left:0;width:0;height:2px;background:linear-gradient(90deg, var(--accent), #e2e8f0);transition:width 0.3s}
+        nav a:hover::after{width:100%}
+        .brand a{font-size:1.3rem;font-weight:800;color:var(--accent) !important}
+        .contact-btn{border:1.5px solid var(--accent) !important;padding:10px 24px !important;background:transparent !important;color:var(--accent) !important;font-weight:600 !important;border-radius:4px !important;position:relative !important}
+        .contact-btn::after{display:none !important}
+        .contact-btn:hover{background:var(--accent) !important;color:#ffffff !important;transform:translateY(0) !important}
+        .container{max-width:900px;margin:0 auto;padding:60px 20px}
+        .hero{margin-bottom:36px}
+        .hero h1{color:var(--accent);margin:0 0 12px;font-size:2.8rem;font-weight:900}
+        .hero p{color:var(--muted);line-height:1.8;font-size:1.05rem}
+        .section{background:#ffffff;padding:28px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.06);margin-bottom:28px;border-left:4px solid var(--accent);transition:all 0.3s}
+        .section:hover{box-shadow:0 12px 28px rgba(45,55,72,0.15);transform:translateX(4px)}
+        .section h2{color:var(--accent);margin-top:0;font-size:1.4rem;font-weight:700}
+        .award-item{padding:20px;margin-bottom:16px;background:#f9f9f9;border-left:4px solid var(--accent);border-radius:4px;transition:all 0.3s}
+        .award-item:hover{background:#f0f5ff}
+        .award-title{font-size:1.1rem;font-weight:600;color:var(--accent);margin:0 0 8px}
+        .award-date{color:#718096;font-size:0.9rem;margin:0 0 6px}
+        .award-org{color:#4a5568;font-size:0.95rem;margin:0}
+        footer{text-align:center;padding:32px 20px;color:#a0aec0;margin-top:40px;border-top:2px solid #e2e8f0;position:relative}
+        footer::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:60px;height:2px;background:linear-gradient(90deg, transparent, var(--accent), transparent)}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="brand">Isabelle Seepersaud</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="discover.html">Discover UMD</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a class="contact-btn" href="mailto:isabelle4seepersaud@gmail.com">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="section" style="border-bottom:none">
+            <h1>Awards & Recognition</h1>
+            <p>Achievements and recognition I've received throughout my academic and professional journey.</p>
+        </section>
+
+        <section class="section">
+            <div class="award-item">
+                <p class="award-title">Add your awards here</p>
+                <p class="award-date">Date</p>
+                <p class="award-org">Organization or Issuer</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Isabelle Seepersaud. All rights reserved.</p>
+    </footer>
+</body>
+</html>

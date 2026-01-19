@@ -105,14 +105,12 @@ Then visit http://localhost:8000 in your browser.
 ├── files/
 │   └── final resume.pdf        # Downloadable resume
 ├── js/
-│   ├── game.js                 # Game JavaScript
 │   └── scrip.js                # Additional scripts
 ├── index.html                  # Home page
 ├── hobbies.html                # Hobbies page
 ├── discover.html               # Discover UMD page
 ├── resume.html                 # Resume page
 ├── career.html                 # Career page
-├── game.html                   # Game page
 ├── README.md                   # Project documentation
 └── .gitignore                  # Git ignore rules
 ```

@@ -9,7 +9,6 @@ This is a personal website showcasing my projects, hobbies, career information, 
 - `discover.html` - Discover UMD page
 - `resume.html` - Resume and qualifications
 - `career.html` - Career information
-- `game.html` - Interactive game
 - `CSS/` - Stylesheet files
 - `media/` - Images, videos, and audio files
 - `js/` - JavaScript files
