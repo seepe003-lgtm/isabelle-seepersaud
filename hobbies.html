@@ -6,42 +6,41 @@
 	<title>Hobbies — Isabelle Seepersaud</title>
 	<link rel="stylesheet" href="CSS/styles.css">
 	<link rel="stylesheet" href="CSS/template.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<style>
-		:root{--accent:#2d3748;--muted:#718096}
-		body{font-family:'Inter','Segoe UI',sans-serif;margin:0;background:#ffffff;color:#2d3748}
-		header{background:#ffffff;border-bottom:2px solid #e2e8f0;box-shadow:0 2px 4px rgba(45,55,72,0.05)}
+		:root{--accent:#2d3748;--muted:#718096;--light:#ffffff}
+		body{font-family:'Inter','Segoe UI',sans-serif;margin:0;background:#ffffff;color:#2d3748;line-height:1.6}
+		header{background:#ffffff;border-bottom:2px solid #e2e8f0;box-shadow:0 2px 4px rgba(45,55,72,0.05);position:sticky;top:0;z-index:100}
 		nav{max-width:900px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
 		nav ul{list-style:none;display:flex;gap:32px;margin:0;padding:0}
 		nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:0.95rem;transition:all 0.3s;position:relative}
 		nav a:hover{color:var(--accent);transform:translateY(-2px)}
 		nav a::after{content:'';position:absolute;bottom:-8px;left:0;width:0;height:2px;background:linear-gradient(90deg, var(--accent), #e2e8f0);transition:width 0.3s}
 		nav a:hover::after{width:100%}
-		.container{max-width:900px;margin:36px auto;padding:20px}
-		h1{color:var(--accent);margin:0 0 12px;font-size:2.4rem;font-weight:800}
-		p{color:#4a5568;line-height:1.8}
+		.brand a{font-size:1.3rem;font-weight:800;color:var(--accent) !important}
+		.contact-btn{background:linear-gradient(135deg, var(--accent), #1a202c) !important;border:none !important;padding:12px 28px !important;color:#ffffff !important;font-weight:600 !important;font-size:0.95rem !important;border-radius:8px !important;position:relative !important;box-shadow:0 4px 15px rgba(45,55,72,0.2) !important;transition:all 0.3s ease !important;cursor:pointer !important;display:inline-flex !important;align-items:center !important;gap:8px !important}
+		.contact-btn::after{display:none !important}
+		.contact-btn:hover{background:linear-gradient(135deg, #1a202c, var(--accent)) !important;box-shadow:0 8px 24px rgba(45,55,72,0.3) !important;transform:translateY(-2px) !important}
+		.container{max-width:900px;margin:0 auto;padding:60px 20px}
+		h1{color:var(--accent);margin:0 0 12px;font-size:2.4rem;font-weight:900}
+		p{color:#4a5568;line-height:1.8;font-size:0.98rem}
 		.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:24px}
-		.card{background:#ffffff;border-radius:8px;border:1px solid #e2e8f0;box-shadow:0 2px 8px rgba(45,55,72,0.05);overflow:hidden;transition:all 0.3s;display:flex;flex-direction:column;height:100%}
+		.card{background:#ffffff;border-radius:8px;border:2px solid #e2e8f0;box-shadow:0 4px 12px rgba(0,0,0,0.06);overflow:hidden;transition:all 0.3s;display:flex;flex-direction:column;height:100%}
 		.card:hover{box-shadow:0 12px 28px rgba(45,55,72,0.15);transform:translateY(-6px);border-color:var(--accent)}
 		.card-image{width:100%;height:250px;background:linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);display:flex;align-items:center;justify-content:center;overflow:hidden;transition:transform 0.3s}
 		.card:hover .card-image{transform:scale(1.05)}
 		.card img{width:100%;height:100%;object-fit:contain;padding:16px;box-sizing:border-box;transition:filter 0.3s}
 		.card:hover img{filter:brightness(1.1)}
 		.card-content{padding:20px;flex:1;display:flex;flex-direction:column}
-		.card h2{margin:0 0 8px;color:var(--accent);font-size:1.2rem;font-weight:700}
+		.card h2{margin:0 0 8px;color:var(--accent);font-size:1.1rem;font-weight:700}
 		.card p{margin:0 0 12px;color:#4a5568;font-size:0.95rem;line-height:1.6;flex:1}
-		.card-summary{display:block}
-		.card-full{display:none}
 		.card a{color:var(--accent);text-decoration:none;font-weight:600;font-size:0.9rem;transition:color 0.2s}
-		.card a:hover{color:#1a365d}
-		.card a:hover{text-decoration:underline}
+		.card a:hover{color:#1a365d;text-decoration:underline}
 		.back{display:inline-block;margin-top:24px;color:var(--accent);text-decoration:none;font-weight:600;transition:all 0.3s;position:relative}
 		.back::before{content:'';position:absolute;left:0;bottom:-4px;width:0;height:2px;background:linear-gradient(90deg, var(--accent), transparent);transition:width 0.3s}
 		.back:hover{color:#1a365d;transform:translateX(8px)}
 		.back:hover::before{width:100%}
-		.contact-btn{background:linear-gradient(135deg, var(--accent), #1a202c) !important;border:none !important;padding:12px 28px !important;color:#ffffff !important;font-weight:600 !important;font-size:0.95rem !important;border-radius:8px !important;position:relative !important;box-shadow:0 4px 15px rgba(45,55,72,0.2) !important;transition:all 0.3s ease !important;cursor:pointer !important;display:inline-flex !important;align-items:center !important;gap:8px !important}
-		.contact-btn::after{display:none !important}
-		.contact-btn:hover{background:linear-gradient(135deg, #1a202c, var(--accent)) !important;box-shadow:0 8px 24px rgba(45,55,72,0.3) !important;transform:translateY(-2px) !important}
-		footer{text-align:center;padding:18px 0;color:#a0aec0;border-top:2px solid #e2e8f0;position:relative;margin-top:36px}
+		footer{text-align:center;padding:32px 20px;color:#a0aec0;border-top:2px solid #e2e8f0;position:relative;margin-top:40px}
 		footer::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:60px;height:2px;background:linear-gradient(90deg, transparent, var(--accent), transparent)}
 	</style>
 </head>
@@ -138,6 +137,115 @@ Through hands-on experiences in residential communities, Housing & Residential L
  • Strengthen Business Etiquette to navigate professional environments with competence and poise.
 
 Through workshops, discussions, and networking opportunities, Women in Business empowers participants to thrive as leaders, innovators, and professionals in their chosen fields.</p>
+					<a href="#" onclick="toggleContent(this); return false;">Read More →</a>
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="card-image">
+					<img src="media/images/umd.png" alt="University of Minnesota Duluth" onerror="this.src='media/images/mypic.svg'">
+				</div>
+				<div class="card-content">
+					<h2>Women in Business – UMD Duluth</h2>
+					<p class="card-summary">A student organization at University of Minnesota Duluth dedicated to empowering women in business and professional development.</p>
+					<p class="card-full" style="display:none">A student organization at University of Minnesota Duluth dedicated to empowering women in business through networking, mentorship, and professional development. This organization provides opportunities to:
+ • Connect with female business professionals and entrepreneurs in the community.
+ • Develop leadership and professional skills through workshops and seminars.
+ • Build a supportive network of women pursuing business-related careers.
+ • Explore career opportunities and pathways in various business fields.
+
+Through collaboration and mutual support, this organization helps women prepare for success in the business world.</p>
+					<a href="#" onclick="toggleContent(this); return false;">Read More →</a>
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="card-image">
+					<img src="media/images/ama.png" alt="American Marketing Association" onerror="this.src='media/images/mypic.svg'">
+				</div>
+				<div class="card-content">
+					<h2>American Marketing Association – UMD Duluth</h2>
+					<p class="card-summary">A student-led organization at University of Minnesota Duluth dedicated to marketing education and professional development.</p>
+					<p class="card-full" style="display:none">A student-led organization at University of Minnesota Duluth dedicated to bridging classroom knowledge with real-world marketing experiences. This program provides opportunities to:
+ • Apply theoretical knowledge to practical marketing projects and case studies.
+ • Network with marketing professionals and industry leaders.
+ • Develop skills in digital marketing, brand management, and strategic planning.
+ • Collaborate with peers on campaigns and professional development initiatives.
+
+Through hands-on experiences and industry connections, AMA prepares students for successful careers in marketing.</p>
+					<a href="#" onclick="toggleContent(this); return false;">Read More →</a>
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="card-image">
+					<img src="media/images/um.png" alt="Business Professionals of America" onerror="this.src='media/images/mypic.svg'">
+				</div>
+				<div class="card-content">
+					<h2>Business Professionals of America</h2>
+					<p class="card-summary">A national organization focused on preparing students for success in business and professional careers through competitive events and skill development.</p>
+					<p class="card-full" style="display:none">A national organization focused on preparing students for success in business and professional careers. BPA provides opportunities to:
+ • Develop business and technical skills through competitive events and challenges.
+ • Connect with students from across the country with similar career interests.
+ • Gain experience in leadership, teamwork, and business decision-making.
+ • Prepare for professional careers through workshops, conferences, and networking.
+
+Through participation in competitions and professional activities, BPA helps students build the skills and confidence needed for career success.</p>
+					<a href="#" onclick="toggleContent(this); return false;">Read More →</a>
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="card-image">
+					<img src="media/images/um.png" alt="DECA" onerror="this.src='media/images/mypic.svg'">
+				</div>
+				<div class="card-content">
+					<h2>DECA</h2>
+					<p class="card-summary">An organization providing real-world business and entrepreneurship experiences through competitive events and leadership development.</p>
+					<p class="card-full" style="display:none">An organization providing real-world business and entrepreneurship experiences for middle and high school students. DECA offers opportunities to:
+ • Compete in case studies, role plays, and presentations focused on business challenges.
+ • Develop entrepreneurship, leadership, and business management skills.
+ • Network with peers and professionals in the business community.
+ • Gain practical experience in marketing, finance, operations, and strategy.
+
+Through competitive events and professional development, DECA prepares students to become business leaders and innovators.</p>
+					<a href="#" onclick="toggleContent(this); return false;">Read More →</a>
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="card-image">
+					<img src="media/images/um.png" alt="National Honor Society" onerror="this.src='media/images/mypic.svg'">
+				</div>
+				<div class="card-content">
+					<h2>National Honor Society</h2>
+					<p class="card-summary">An organization recognizing and honoring students who have demonstrated outstanding achievement in academics, character, leadership, and service.</p>
+					<p class="card-full" style="display:none">An organization recognizing and honoring students who have demonstrated outstanding achievement in academics, character, leadership, and service. NHS members are opportunities to:
+ • Participate in community service projects and volunteer initiatives.
+ • Engage in leadership development and mentorship opportunities.
+ • Build a network with high-achieving peers committed to excellence.
+ • Develop character and leadership skills through collaborative projects.
+
+Through service and excellence, National Honor Society celebrates and develops student leaders.</p>
+					<a href="#" onclick="toggleContent(this); return false;">Read More →</a>
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="card-image">
+					<img src="media/images/wagsimage.png" alt="Wags and Whiskers Volunteer" onerror="this.src='media/images/mypic.svg'">
+				</div>
+				<div class="card-content">
+					<h2>Volunteer – Wags and Whiskers</h2>
+					<p class="card-summary">A volunteer position dedicated to animal care and welfare, supporting rescue operations and foster programs for dogs and cats.</p>
+					<p class="card-full" style="display:none">A volunteer position dedicated to animal care and welfare at Wags and Whiskers. This experience provides opportunities to:
+ • Care for rescued animals, including dogs and cats in transition.
+ • Assist with adoption events and help match animals with forever homes.
+ • Support fundraising initiatives to sustain rescue operations.
+ • Develop compassion, responsibility, and commitment to animal welfare.
+ • Contribute meaningfully to the community through dedicated service.
+
+Through hands-on animal care and rescue support, this volunteer work makes a direct impact on animal lives and builds personal character.</p>
 					<a href="#" onclick="toggleContent(this); return false;">Read More →</a>
 				</div>
 			</article>
