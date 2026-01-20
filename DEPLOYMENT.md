@@ -107,7 +107,7 @@ Then visit http://localhost:8000 in your browser.
 ├── js/
 │   └── scrip.js                # Additional scripts
 ├── index.html                  # Home page
-├── hobbies.html                # Hobbies page
+├── hobbies.html                # Activities & Involvement page
 ├── discover.html               # Discover UMD page
 ├── resume.html                 # Resume page
 ├── career.html                 # Career page

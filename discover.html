@@ -6,6 +6,7 @@
   <title>Discover UMD — Isabelle Seepersaud</title>
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="stylesheet" href="CSS/template.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root{--accent:#2d3748;--muted:#718096;--light:#ffffff}
     body{font-family:'Inter','Segoe UI',sans-serif;margin:0;background:#ffffff;color:#2d3748;line-height:1.6}
@@ -17,10 +18,12 @@
     nav a::after{content:'';position:absolute;bottom:-8px;left:0;width:0;height:2px;background:linear-gradient(90deg, var(--accent), #e2e8f0);transition:width 0.3s}
     nav a:hover::after{width:100%}
     .brand a{font-size:1.3rem;font-weight:800;color:var(--accent) !important}
+    .contact-btn{background:linear-gradient(135deg, var(--accent), #1a202c) !important;border:none !important;padding:12px 28px !important;color:#ffffff !important;font-weight:600 !important;font-size:0.95rem !important;border-radius:8px !important;position:relative !important;box-shadow:0 4px 15px rgba(45,55,72,0.2) !important;transition:all 0.3s ease !important;cursor:pointer !important;display:inline-flex !important;align-items:center !important;gap:8px !important}
+    .contact-btn::after{display:none !important}
+    .contact-btn:hover{background:linear-gradient(135deg, #1a202c, var(--accent)) !important;box-shadow:0 8px 24px rgba(45,55,72,0.3) !important;transform:translateY(-2px) !important}
     .container{max-width:900px;margin:0 auto;padding:60px 20px}
-    .hero{margin-bottom:36px}
-    .hero h1{color:var(--accent);margin:0 0 12px;font-size:2.8rem;font-weight:900}
-    .hero p{color:var(--muted);line-height:1.8;font-size:1.05rem}
+    h1{color:var(--accent);margin:0 0 12px;font-size:2.4rem;font-weight:900}
+    p{color:#4a5568;line-height:1.8;font-size:0.98rem}
     .section{background:#ffffff;padding:28px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.06);margin-bottom:28px;border-left:4px solid var(--accent);transition:all 0.3s}
     .section:hover{box-shadow:0 12px 28px rgba(45,55,72,0.15);transform:translateX(4px)}
     .section h2{color:var(--accent);margin-top:0;font-size:1.4rem;font-weight:700}
@@ -31,9 +34,6 @@
     .content p{color:#4a5568;line-height:1.8;font-size:0.98rem}
     .content ul{color:#4a5568;line-height:1.9;margin:12px 0}
     .video{max-width:720px;margin:20px 0;border-radius:8px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.06)}
-    .contact-btn{background:linear-gradient(135deg, var(--accent), #1a202c) !important;border:none !important;padding:12px 28px !important;color:#ffffff !important;font-weight:600 !important;font-size:0.95rem !important;border-radius:8px !important;position:relative !important;box-shadow:0 4px 15px rgba(45,55,72,0.2) !important;transition:all 0.3s ease !important;cursor:pointer !important;display:inline-flex !important;align-items:center !important;gap:8px !important}
-    .contact-btn::after{display:none !important}
-    .contact-btn:hover{background:linear-gradient(135deg, #1a202c, var(--accent)) !important;box-shadow:0 8px 24px rgba(45,55,72,0.3) !important;transform:translateY(-2px) !important}
     footer{text-align:center;padding:32px 20px;color:#a0aec0;margin-top:40px;border-top:2px solid #e2e8f0;position:relative}
     footer::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:60px;height:2px;background:linear-gradient(90deg, transparent, var(--accent), transparent)}
     @media(max-width:800px){.flex{flex-direction:column}.poster{flex:unset;width:100%;height:280px}}
@@ -45,7 +45,7 @@
       <a href="index.html" class="brand">Isabelle Seepersaud</a>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="hobbies.html">Activities & Involvement</a></li>
         <li><a href="discover.html">Discover UMD</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="awards.html">Awards</a></li>

@@ -1,11 +1,11 @@
 # Isabelle Seepersaud - Personal Website
 
-This is a personal website showcasing my projects, hobbies, career information, and resume.
+This is a personal website showcasing my projects, activities, career information, and resume.
 
 ## Website Structure
 
 - `index.html` - Home page
-- `hobbies.html` - Hobbies and interests
+- `hobbies.html` - Activities and involvement
 - `discover.html` - Discover UMD page
 - `resume.html` - Resume and qualifications
 - `career.html` - Career information
