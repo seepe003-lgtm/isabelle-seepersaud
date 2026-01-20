@@ -18,9 +18,10 @@
         nav a::after{content:'';position:absolute;bottom:-8px;left:0;width:0;height:2px;background:linear-gradient(90deg, var(--accent), #e2e8f0);transition:width 0.3s}
         nav a:hover::after{width:100%}
         .brand a{font-size:1.3rem;font-weight:800;color:var(--accent) !important}
-        .contact-btn{border:1.5px solid var(--accent) !important;padding:10px 24px !important;background:transparent !important;color:var(--accent) !important;font-weight:600 !important;border-radius:4px !important;position:relative !important}
+        .contact-btn{background:linear-gradient(135deg, var(--accent), #1a202c) !important;border:none !important;padding:12px 28px !important;color:#ffffff !important;font-weight:600 !important;font-size:0.95rem !important;border-radius:8px !important;position:relative !important;box-shadow:0 4px 15px rgba(45,55,72,0.2) !important;transition:all 0.3s ease !important;cursor:pointer !important;display:inline-flex !important;align-items:center !important;gap:8px !important}
+        .contact-btn::before{content:'\f0e0';font-family:'Font Awesome 6 Pro';font-weight:900;margin-right:4px}
         .contact-btn::after{display:none !important}
-        .contact-btn:hover{background:var(--accent) !important;color:#ffffff !important;transform:translateY(0) !important}
+        .contact-btn:hover{background:linear-gradient(135deg, #1a202c, var(--accent)) !important;box-shadow:0 8px 24px rgba(45,55,72,0.3) !important;transform:translateY(-2px) !important}
         .container{max-width:900px;margin:0 auto;padding:60px 20px}
         .hero{margin-bottom:36px}
         .hero h1{color:var(--accent);margin:0 0 12px;font-size:2.8rem;font-weight:900}
