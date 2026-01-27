@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Isabelle Seepersaud - Home</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/template.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+        :root{--ink:#121417;--muted:#5f6b7a;--line:#e6e8eb;--paper:#ffffff;--wash:#f7f5f2}
+        *{box-sizing:border-box}\r\n        html{font-size:16px}
+        body{font-family:'IBM Plex Sans','Segoe UI',sans-serif;margin:0;background:linear-gradient(180deg, #f7f5f2 0%, #ffffff 55%, #f7f5f2 100%);color:var(--ink);line-height:1.6}
+        header{background:rgba(255,255,255,0.9);border-bottom:1px solid var(--line);backdrop-filter:saturate(120%) blur(10px);position:sticky;top:0;z-index:100}
+        nav{max-width:960px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+        nav ul{list-style:none;display:flex;gap:20px;margin:0;padding:0;flex-wrap:wrap}
+        nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:0.95rem;letter-spacing:0.2px;transition:color 0.2s ease}
+        nav a:hover{color:var(--ink)}
+        .brand{font-family:'Source Serif 4',serif;font-size:1.15rem;font-weight:600;color:var(--ink)}
+        .contact-btn{border:1px solid var(--line);padding:10px 18px;border-radius:999px;color:var(--ink);font-weight:500;background:var(--paper);transition:all 0.2s ease}
+        .contact-btn:hover{border-color:var(--ink);transform:translateY(-1px)}
+        .container{max-width:960px;margin:0 auto;padding:72px 24px}
+        .hero{margin-bottom:36px}
+        .hero h1{font-family:'Source Serif 4',serif;color:var(--ink);margin:0 0 12px;font-size:2.6rem;font-weight:600;letter-spacing:-0.2px}
+        .hero p{color:var(--muted);line-height:1.8;font-size:1.02rem;max-width:640px;margin:0}
+        .section{background:var(--paper);padding:32px;border:1px solid var(--line);border-radius:14px;margin-bottom:24px}
+        .split{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start}
+        .headshot figure{margin:0}
+        .headshot img{width:260px;height:260px;border-radius:50%;object-fit:cover;border:1px solid var(--line);display:block}
+        .headshot figcaption{color:var(--muted);font-size:0.9rem;margin-top:10px;text-align:center}
+        .intro h2{font-family:'Source Serif 4',serif;margin:0 0 10px;font-size:1.6rem}
+        .intro p{margin:0 0 12px;color:var(--muted);font-size:0.97rem;line-height:1.8}
+        .hobbies{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:18px}
+        .hobby{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--paper);display:flex;flex-direction:column;gap:12px;animation:fadeUp 0.6s ease both}
+        .hobby:nth-child(2){animation-delay:0.08s}
+        .hobby-image{width:100%;height:180px;background:#f2f2f2;border-radius:10px;overflow:hidden;border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+        .hobby img{width:100%;height:100%;object-fit:contain;padding:12px;box-sizing:border-box}
+        .hobby h3{margin:0;font-size:1.1rem;font-weight:600}
+        .hobby p{margin:0;color:var(--muted);font-size:0.95rem;line-height:1.7}
+        .text-link{color:var(--ink);text-decoration:none;font-weight:500;font-size:0.92rem}
+        .text-link:hover{text-decoration:underline}
+        .contact-form{display:flex;flex-direction:column;gap:20px;max-width:600px}
+        .form-group{display:flex;flex-direction:column;gap:8px}
+        .form-group label{font-weight:500;color:var(--ink);font-size:0.95rem}
+        .form-group input,.form-group textarea{padding:12px 16px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:0.95rem;color:var(--ink);background:var(--paper);transition:border-color 0.2s ease}
+        .form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(18,20,23,0.1)}
+        .submit-btn{padding:12px 28px;border:1px solid var(--ink);border-radius:999px;color:var(--paper);background:var(--ink);font-weight:500;cursor:pointer;transition:all 0.2s ease;align-self:flex-start}
+        .submit-btn:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(18,20,23,0.15)}
+        .submit-btn:active{transform:translateY(0)}
+        footer{text-align:center;padding:32px 20px;color:var(--muted);margin-top:40px;border-top:1px solid var(--line)}
+        @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+        @media(max-width:900px){.split{grid-template-columns:1fr}.headshot img{width:220px;height:220px;margin:0 auto}.headshot figcaption{text-align:center}}
+        @media(max-width:600px){.container{padding:52px 20px}.hero h1{font-size:2rem}}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="brand">Isabelle Seepersaud</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hobbies.html">Activities & Involvement</a></li>
+                <li><a href="discover.html">Discover UMD</a></li>
+                <li><a href="academic.html">Academic Background</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a class="contact-btn" href="mailto:isabelle4seepersaud@gmail.com">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Hi, I'm Isabelle Seepersaud</h1>
+            <p>Explore my projects, activities and involvement. Use the navigation above to get started.</p>
+        </section>
+
+        <section class="section split" aria-labelledby="welcome-heading">
+            <div class="headshot">
+                <figure>
+                    <picture>
+                        <source srcset="media/images/IMG_4250.JPG" type="image/jpeg">
+                        <img src="media/images/IMG_4250.JPG" alt="Headshot of Isabelle Seepersaud" loading="lazy">
+                    </picture>
+                    <figcaption>Isabelle Seepersaud</figcaption>
+                </figure>
+            </div>
+
+            <div class="intro">
+                <h2 id="welcome-heading">Welcome</h2>
+                <p>Hello, I'm Isabelle Seepersaud. I am a motivated Business student majoring in Marketing at the University of Minnesota Duluth, passionate about brand strategy, experiential marketing, and consumer engagement. Through my involvement in campus organizations and my role as a Residential Advisor, I've developed strengths in communication, community-building, problem-solving, and leadership.</p>
+                <p>I enjoy opportunities that challenge me to think creatively, connect with diverse audiences, and help brands build memorable experiences. I'm actively growing my professional network and exploring internships that allow me to apply data-driven insights, event activation, and brand development in real-world environments. On this site you'll find my projects, activities and involvement, and resume. Thanks for visiting.</p>
+            </div>
+        </section>
+
+        <section class="section" aria-label="Activities & Involvement">
+            <h2>Activities & Involvement</h2>
+            <div class="hobbies">
+                <article class="hobby">
+                    <a href="hobbies.html">
+                        <div class="hobby-image">
+                            <img src="media/images/wagsimage.png" alt="Wags & Whiskers Animal Rescue of Minnesota logo featuring a smiling dog and cat with a pink heart between them" onerror="this.src='media/images/images.jpg'">
+                        </div>
+                    </a>
+                    <h3><a href="hobbies.html" style="text-decoration:none;color:inherit">Fostering Rescue Dogs</a></h3>
+                    <p>Involved supporting animal welfare through fostering dogs, assisting with adoption and fundraising events, and contributing over 100 volunteer hours. The experience developed teamwork, responsibility, compassion, and leadership while making a meaningful impact in the community.</p>
+                    <p><a class="text-link" href="hobbies.html">Read more</a></p>
+                </article>
+
+                <article class="hobby">
+                    <a href="hobbies.html">
+                        <div class="hobby-image">
+                            <img src="media/images/woman.jpg" alt="Woman in business" onerror="this.src='media/images/images.jpg'">
+                        </div>
+                    </a>
+                    <h3><a href="hobbies.html" style="text-decoration:none;color:inherit">Women in Business</a></h3>
+                    <p>Women in Business is an initiative designed to empower women in professional environments. It helps me build networks, develop communication and leadership skills, gain confidence in self-advocacy, and refine business etiquette.</p>
+                    <p><a class="text-link" href="hobbies.html">Read more</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact-section" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <p style="color: var(--muted); margin-bottom: 24px;">Have a question or want to connect? I'd love to hear from you. Fill out the form below and I'll get back to you as soon as possible.</p>
+            <form class="contact-form" action="https://formspree.io/f/mkoovevg" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Isabelle Seepersaud. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

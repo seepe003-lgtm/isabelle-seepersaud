@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awards - Isabelle Seepersaud</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/template.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+        :root{--ink:#121417;--muted:#5f6b7a;--line:#e6e8eb;--paper:#ffffff;--wash:#f7f5f2}
+        *{box-sizing:border-box}\r\n        html{font-size:16px}
+        body{font-family:'IBM Plex Sans','Segoe UI',sans-serif;margin:0;background:linear-gradient(180deg, #f7f5f2 0%, #ffffff 55%, #f7f5f2 100%);color:var(--ink);line-height:1.6}
+        header{background:rgba(255,255,255,0.9);border-bottom:1px solid var(--line);backdrop-filter:saturate(120%) blur(10px);position:sticky;top:0;z-index:100}
+        nav{max-width:960px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+        nav ul{list-style:none;display:flex;gap:20px;margin:0;padding:0;flex-wrap:wrap}
+        nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:0.95rem;letter-spacing:0.2px;transition:color 0.2s ease}
+        nav a:hover{color:var(--ink)}
+        .brand{font-family:'Source Serif 4',serif;font-size:1.15rem;font-weight:600;color:var(--ink)}
+        .contact-btn{border:1px solid var(--line);padding:10px 18px;border-radius:999px;color:var(--ink);font-weight:500;background:var(--paper);transition:all 0.2s ease}
+        .contact-btn:hover{border-color:var(--ink);transform:translateY(-1px)}
+        .container{max-width:960px;margin:0 auto;padding:72px 24px}
+        h1{font-family:'Source Serif 4',serif;color:var(--ink);margin:0 0 10px;font-size:2.6rem;font-weight:600;letter-spacing:-0.2px}
+        .intro-text{color:var(--muted);line-height:1.8;font-size:1.02rem;margin-bottom:40px;max-width:640px}
+        .section{background:var(--paper);padding:32px;border:1px solid var(--line);border-radius:14px;margin-bottom:24px}
+        .awards-list{display:grid;grid-template-columns:1fr;gap:18px}
+        .award-card{border:1px solid var(--line);border-radius:12px;padding:22px 24px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:flex-start;background:var(--paper);animation:fadeUp 0.6s ease both}
+        .award-card:nth-child(2){animation-delay:0.05s}
+        .award-card:nth-child(3){animation-delay:0.1s}
+        .award-card:nth-child(4){animation-delay:0.15s}
+        .award-mark{width:12px;height:12px;border:2px solid var(--ink);border-radius:50%;margin-top:6px}
+        .award-title{font-size:1.1rem;font-weight:600;color:var(--ink);margin:0 0 6px}
+        .award-org{color:var(--muted);font-size:0.98rem;margin:0 0 10px}
+        .award-date{color:var(--muted);font-size:0.9rem;margin:0;letter-spacing:0.2px}
+        .award-description{color:var(--ink);font-size:0.95rem;line-height:1.7;margin:12px 0 0 0;padding-top:12px;border-top:1px solid var(--line)}
+        footer{text-align:center;padding:32px 20px;color:var(--muted);margin-top:40px;border-top:1px solid var(--line)}
+        @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+        @media(max-width:768px){.container{padding:48px 20px}h1{font-size:2rem}nav{flex-direction:column;align-items:flex-start}.award-card{grid-template-columns:1fr}.award-mark{display:none}}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="brand">Isabelle Seepersaud</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hobbies.html">Activities & Involvement</a></li>
+                <li><a href="discover.html">Discover UMD</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a class="contact-btn" href="mailto:isabelle4seepersaud@gmail.com">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1>Awards & Recognition</h1>
+            <p class="intro-text">Achievements and recognition I've received throughout my academic and professional journey.</p>
+        </section>
+
+        <section class="section">
+            <div class="awards-list">
+                <div class="award-card">
+                    <div class="award-mark"></div>
+                    <div class="award-content">
+                        <p class="award-title">DECA State Competition</p>
+                        <p class="award-org">DECA Inc.</p>
+                        <p class="award-date">2021-2023</p>
+                        <p class="award-description">Demonstrating excellence in business, entrepreneurship, and leadership by developing real-world marketing solutions and addressing business challenges through role plays and presentations.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-mark"></div>
+                    <div class="award-content">
+                        <p class="award-title">National Honor Society</p>
+                        <p class="award-org">National Association of Secondary School Principals</p>
+                        <p class="award-description">Inducted into the National Honor Society for demonstrating outstanding academic achievement, character, leadership, and service.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-mark"></div>
+                    <div class="award-content">
+                        <p class="award-title">Dean's List</p>
+                        <p class="award-org">University of Minnesota Duluth</p>
+                        <p class="award-date">Multiple Semesters</p>
+                        <p class="award-description">Recognized for maintaining high academic performance and achieving a GPA that places me among the top students in my college.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-mark"></div>
+                    <div class="award-content">
+                        <p class="award-title">UMD Scholarship</p>
+                        <p class="award-org">University of Minnesota Duluth</p>
+                        <p class="award-date">2024</p>
+                        <p class="award-description">Awarded merit-based scholarship recognizing academic excellence, potential for success, and commitment to achieving educational goals at the University of Minnesota Duluth.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-mark"></div>
+                    <div class="award-content">
+                        <p class="award-title">3rd Place Award - Ethics and Professionalism</p>
+                        <p class="award-org">Business Professionals of America</p>
+                        <p class="award-date">2023</p>
+                        <p class="award-description">Recognized for demonstrating exceptional ethics, integrity, and professional excellence in business practices and leadership.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Isabelle Seepersaud. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
